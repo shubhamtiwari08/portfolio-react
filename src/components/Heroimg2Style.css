@@ -1,0 +1,38 @@
+.hero-img {
+  width: 100%;
+  height: 60vh;
+  background-color: rgba(0, 0, 0, 0.617);
+  position: relative;
+}
+
+.hero-img::before {
+  content: "";
+  background-image: url("https://img.freepik.com/free-vector/business-startup-project-launch-successful-idea_107791-13323.jpg?w=996&t=st=1671971254~exp=1671971854~hmac=007c98248b0e435fbc44502cb3278b1ba53538474be3fbc0fd3063dfdac77e4e");
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.heading {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading h1 {
+  font-size: 50px;
+}
+
+@media screen and (max-width: 640px) {
+  .heading h1 {
+    font-size: 30px;
+  }
+}
